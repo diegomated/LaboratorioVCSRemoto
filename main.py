@@ -15,5 +15,5 @@ elif(d==0):
     x1=-b/2*a
     print("x= ",x1)
 else:
-    print("no existe una solucion para esta ecuacion, dentro de los R")
+    print("no existe una solucion para esta ecuacion")
 
