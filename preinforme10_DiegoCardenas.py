@@ -21,14 +21,25 @@ for i in range (0,10,1):
 print("Diferencia de la mayor y menor utilidad: ", mayor-menor)
 
 acu=0
+kellogs2=np.array([27834,23789,30189,30967,32501,32701,31665,17155,4614,834])
 for i in range (0,10,1):
     for i in range (0,9,1):
-        if kellogs[i]>kellogs[i+1]:
-            acu=kellogs[i]
-            kellogs[i]=kellogs[i+1]
-            kellogs[i+1]=acu
+        if kellogs2[i]>kellogs2[i+1]:
+            acu=kellogs2[i]
+            kellogs2[i]=kellogs2[i+1]
+            kellogs2[i+1]=acu
 
-m1=kellogs.size/2
-m2=(kellogs.size/2)+1
-med=(kellogs[int(m1)-1]+kellogs[int(m2)-1])/2
+m1=kellogs2.size/2
+m2=(kellogs2.size/2)+1
+med=(kellogs2[int(m1)-1]+kellogs2[int(m2)-1])/2
+
 print("la mediana es: ", med)
+
+acuD=0
+for i in range(0,10,1):
+    acuD=acuD+kellogs[i]
+
+prom=0
+for i in range(0,10,1):
+    prom=(100*kellogs[i])/acuD
+    print("Porcentaje año", i+1, ": ", round(prom,2), "%")
