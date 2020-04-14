@@ -40,6 +40,18 @@ for($i=0;$i<10;$i++){
 $m1=count($kellogs2)/2;
 $m2=(count($kellogs2)/2)+1;
 $mediana=($kellogs2[$m1-1]+$kellogs2[$m2-1])/2;
-echo "La mediana es: ".$mediana;
+echo "La mediana es: ".$mediana."<br/>";
+
+$acuD=0;
+$prom=0;
+for($i=0;$i<10;$i++){
+    $acuD=$acuD+$kellogs[$i];
+}
+
+for($i=0;$i<10;$i++){
+    $act=$i+1;
+    echo "Promedio del año: ".$act.": ".round((100*$kellogs[$i])/$acuD,2)."%"."<br/>";
+}
+
 
 ?>
