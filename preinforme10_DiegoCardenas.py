@@ -19,3 +19,16 @@ for i in range (0,10,1):
         menor=kellogs[i]
 
 print("Diferencia de la mayor y menor utilidad: ", mayor-menor)
+
+acu=0
+for i in range (0,10,1):
+    for i in range (0,9,1):
+        if kellogs[i]>kellogs[i+1]:
+            acu=kellogs[i]
+            kellogs[i]=kellogs[i+1]
+            kellogs[i+1]=acu
+
+m1=kellogs.size/2
+m2=(kellogs.size/2)+1
+med=(kellogs[int(m1)-1]+kellogs[int(m2)-1])/2
+print("la mediana es: ", med)
