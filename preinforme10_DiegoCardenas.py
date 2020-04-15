@@ -40,6 +40,16 @@ for i in range(0,10,1):
     acuD=acuD+kellogs[i]
 
 prom=0
+anio=2009
 for i in range(0,10,1):
     prom=(100*kellogs[i])/acuD
-    print("Porcentaje año", i+1, ": ", round(prom,2), "%")
+    print("Porcentaje año", anio, ": ", round(prom,2), "%")
+    anio+=1
+
+print("El deficit del año 2017 respecto al año pasado es de: ", kellogs[9]-kellogs[8])
+
+anio=2009
+for i in range (1,10,1):
+    p_defi=((kellogs[i]-kellogs[i-1])/kellogs[i-1])*100
+    print("Porc. Def año ", anio,": ", round(p_defi,2), "%")
+    anio+=1
