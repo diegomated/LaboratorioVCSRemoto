@@ -48,10 +48,21 @@ for($i=0;$i<10;$i++){
     $acuD=$acuD+$kellogs[$i];
 }
 
+$anio=2008;
 for($i=0;$i<10;$i++){
-    $act=$i+1;
-    echo "Promedio del año: ".$act.": ".round((100*$kellogs[$i])/$acuD,2)."%"."<br/>";
+    echo "Promedio del año: ".$anio.": ".round((100*$kellogs[$i])/$acuD,2)."%"."<br/>";
+    $anio=$anio+1;
 }
 
+$dife=$kellogs[9]-$kellogs[8];
+echo "Deficit del año 2017 respecto al año pasado: ".$dife."<br/>";
+
+$anio=2009;
+for($i=1;$i<10;$i++){
+    $porc=(($kellogs[$i]-$kellogs[$i-1])/$kellogs[$i-1])*100;
+    echo "Por. Def. año ".$anio.": ".round($porc,2)."%"."<br/>";
+    $anio=$anio+1;
+
+}
 
 ?>
