@@ -20,7 +20,7 @@ def ordenarG(c,a):
                     c[a][e][i]=c[a][e][i-1]
                     c[a][e][i-1]=mayor
 
-clases=np.random.randint(10,18, size=144).reshape(8,3,6)
+clases=np.random.randint(10,19, size=144).reshape(8,3,6)
 ordenarG(clases,0); ordenarG(clases,4); ordenarG(clases,6); ordenarG(clases,7)
 ordenarM(clases,1); ordenarM(clases,2); ordenarM(clases,3); ordenarM(clases,5)
 clase=np.random.randint(8, size=1)
