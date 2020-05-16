@@ -67,7 +67,7 @@ def loteria(lista,lista2):
             if lista[i]==lista2[e]:
                 b=b+1
                 cart=e
-    print(a,b,loteria)  #<--debe salir "True,(0-1),1" para que le salga con premio el paquete
+    print(a,b,loteria)
     if (a==True and b<2 and loteria==1):
         while lista2[cart]!=carta:
             carta=random.randint(0,4)
@@ -169,7 +169,7 @@ def letras_consecutivas(lista):
                 lista1.append(lista[i][a])
     lista2=repetidas2(lista1)
     for i in range(0,len(lista2[0])):
-        print("la letra ",lista2[0][i]," se repite en pares ",lista2[1][i]," vez")
+        print("la letra ",lista2[0][i]," se repite en pares ",lista2[1][i]," veces")
 
 def letras_alfabeto2(lista):
     letras=[["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z"],[]]

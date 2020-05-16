@@ -69,7 +69,7 @@ while(turno==True):
     cartas_jugador=[]
     cartas_tallador=[]
     ronda+=1
-    print("\n// ----- // RONDA ",ronda,"// ----- //")
+    print("\n// ---------- // RONDA ",ronda,"// ---------- //")
     turn='YES'
 
     while(turn=='YES'):
